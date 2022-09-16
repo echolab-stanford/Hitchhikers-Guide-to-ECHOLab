@@ -1,0 +1,31 @@
+site_name: ECHOLab Hitchicker's Guide
+repo_url: https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab
+
+theme:
+  name: material
+  locale: en
+  highlightjs: true
+  hljs_language: 
+    - python
+    - R
+    - bash
+
+nav:
+  - Home: index.md
+  - General advice:
+    - 'computing.md'
+    - 'palife.md'
+    - 'resources.md'
+  - Graduate students:
+    - 'recs.md'
+    - 'life.md'
+  - Postdocs:
+    - 'postdocs.md'
+  - About: 
+    - 'Us': 'whois.md'
+    - 'Contribute to this doc': 'contribute.md'
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      separator: "_"
