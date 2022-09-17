@@ -1,3 +1,7 @@
+---
+title: ECHOLab Hitchhikers Guide 
+author: ECHO Lab
+---
 # Welcome to the Environmental Change and Human Outcomes (ECHO) Lab
 
 Here you will find some of the basics to hit off you new research adventures in
