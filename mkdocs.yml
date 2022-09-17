@@ -32,6 +32,16 @@ markdown_extensions:
       permalink: "#"
       separator: "_"
 
+plugins:
+  - search: {}
+  - encryptcontent:
+      global_password: 'secret'
+      title_prefix: '🔒'
+      remember_password: true
+      default_expire_dalay: 24
+      password_button: true
+      password_button_text: 'Decrypt'
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
