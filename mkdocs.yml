@@ -1,4 +1,10 @@
 site_name: ECHOLab Hitchicker's Guide
+repo_name: 'Github'
+repo_url: 'https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab'
+site_url: 'https://echolab-stanford.github.io/Hitchhikers-Guide-to-ECHOLab/'
+site_author: 'ECHOLab'
+
+copyright: '&copy; 2022 ECHOLab'
 
 theme:
   name: material
