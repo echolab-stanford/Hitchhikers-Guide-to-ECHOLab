@@ -1,18 +1,19 @@
 # How to contribute to this document? 
 
-This website is hosted on Github pages and created using [`mkdocs`][mkdocs] and
-is hosted on Github via Github Actions. Any commit done on the `main` branch
-will trigger the rendering of the webpage. To make changes to this documents, is
-important to understan the structure of `mkdocs`. 
+This website is hosted on Github pages, created with [`mkdocs`][mkdocs], and is
+rendered on Github via Github Actions. Any commit done on the `main` branch
+will trigger the rendering of this webpage, updating its content on real-time. To
+make changes to this documents, is important to understand the structure of
+`mkdocs`. 
 
 ## Documentation stucture
 
-The main configuration file for `mkdocs` is `mkdocs.yml` at the root of the repo
-folder. All details related to general configuration, such as the navigation
-tree (`nav`) or the configuration of new plugins. To create a new section, you
-just need to create a markdown document (the extension is `.md`) and put it in
-the right category. For instance, we can create a new section `new_doc` under
-_General Advice_ by changing our config file:  
+The main configuration file for `mkdocs` is `mkdocs.yml` always at the root of
+the repo folder. All details related to general configuration, such as the
+navigation tree (`nav`) or the configuration of new plugins. To create a new
+section, you just need to create a markdown document (the extension is `.md`)
+and put it in the right category. For instance, we can create a new section
+`new_doc` under _General Advice_ by changing our config file:  
 
 ``` yaml title="mkdocs.yml"
 nav:
