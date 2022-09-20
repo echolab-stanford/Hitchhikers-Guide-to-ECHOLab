@@ -107,6 +107,19 @@ the change and merge any changes into the document.
     the merge by using the `--force` flag, or just by forcing it on the PR. This
     might be the right call 95% of the times, be sure of not be the 5%. 
 
+
+## Hot-fixes and easy changes
+
+If you are modifying a single file, or just solving small text changes, you can
+use the Github editor to modify the file. Just go to the `.md` file you want to
+modity and click the ✏️: button (you can also press the <kbd>E</kbd> key). Once
+you make your changes, be sure of select the option _Create a new branch for
+this commit and start a pull request_. 
+
+If you consider your change can be directly commited to `main`, you are wrong.
+Leave it as a PR and find your nearest ECHOer to have a conversation about your
+change, and then both merge the PR! We ❤️  teamwork. 
+
 [condaenv]: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 [conda]: https://docs.conda.io/en/latest/miniconda.html
 [mkdocs]: https://www.mkdocs.org/
