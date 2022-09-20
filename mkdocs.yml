@@ -6,14 +6,18 @@ site_author: 'ECHOLab'
 
 copyright: '&copy; 2022 ECHOLab'
 
+extra:
+  social: 
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/StanfordECHOLab
+      name: Our twitter
+
 theme:
   name: material
   locale: en
-  highlightjs: true
-  hljs_language: 
-    - python
-    - R
-    - bash
+  features:
+    - content.code.annotate
+    - content.tabs.link
 
 nav:
   - Home: index.md
@@ -34,6 +38,14 @@ nav:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   - toc:
       permalink: "#"
       separator: "_"

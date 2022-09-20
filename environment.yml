@@ -1,0 +1,11 @@
+name: mkdocs_echolab
+
+channel:
+  - defaults
+
+dependencies:
+  - python=3.8
+  - pip:
+    - mkdocs
+    - mkdocs-material
+    - mkdocs-encryption-plugin
