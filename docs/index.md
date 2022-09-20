@@ -22,7 +22,7 @@ have an _on-boarding_ document that soft-lands the new members of our team.
 
 This document is crowd-sourced and it needs your help to keep it up-to-date and
 in good shape for others to use. Once you become a tenured ECHOer, you need to
-share your new tricks here to others. See the [contributing guidelines](conibute).
+share your new tricks here to others. See the [contributing guidelines](contribute).
 
 
 

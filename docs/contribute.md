@@ -96,10 +96,16 @@ principle you do not commit to the `main` branch. When working in this document
 the rules of engagement are defined by branching and PR submission. To do this,
 simply create a new branch: `git checkout <name of new branch>` and make all
 changes there. After pushing all changes to Github, you can create a Pull
-Request (top menu). 
+Request in the repository. 
 
 Once a PR is discussed and approved by other member of the lab, you can accept
 the change and merge any changes into the document.
+
+!!! warning 
+    Be careful with merge conflicts. Is possible that some merge conflicts might
+    arise if there are changes in conflicting lines. You can always brute force
+    the merge by using the `--force` flag, or just by forcing it on the PR. This
+    might be the right call 95% of the times, be sure of not be the 5%. 
 
 [condaenv]: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 [conda]: https://docs.conda.io/en/latest/miniconda.html
