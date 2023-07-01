@@ -1,10 +1,10 @@
-site_name: ECHOLab Hitchicker's Guide
+site_name: ECHOLab Hitchhicker's Guide
 repo_name: 'Github'
 repo_url: 'https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab'
 site_url: 'https://echolab-stanford.github.io/Hitchhikers-Guide-to-ECHOLab/'
 site_author: 'ECHOLab'
 
-copyright: '&copy; 2022 ECHOLab'
+copyright: '&copy; 2023 ECHOLab'
 
 extra:
   social: 
@@ -18,6 +18,9 @@ theme:
   features:
     - content.code.annotate
     - content.tabs.link
+    - content.code.copy
+    - navigation.instant
+    - navigation.path
 
 nav:
   - Home: index.md
@@ -36,20 +39,31 @@ nav:
     - 'Contribute to this doc': 'contribute.md'
 
 markdown_extensions:
+  - toc:
+      title: On this page
+      toc_depth: 4
+      permalink: "#"
+      separator: "_"
   - pymdownx.arithmatex:
       generic: true
-  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true 
-  - toc:
-      permalink: "#"
-      separator: "_"
-
+  - footnotes
+  - def_list
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji
 plugins:
   - search: {}
   - encryptcontent:
