@@ -34,6 +34,8 @@ nav:
     - 'life.md'
   - Postdocs:
     - 'postdocs.md'
+  - Predocs: 
+    - 'predocs.md'
   - About: 
     - 'Us': 'whois.md'
     - 'Contribute to this doc': 'contribute.md'
