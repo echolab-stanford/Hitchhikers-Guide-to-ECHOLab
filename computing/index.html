@@ -1,0 +1,1070 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="ECHOLab">
+      
+      
+        <link rel="canonical" href="https://echolab-stanford.github.io/Hitchhikers-Guide-to-ECHOLab/computing/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../palife/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Computing - ECHOLab Hitchhicker's Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#computing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ECHOLab Hitchhicker&#39;s Guide" class="md-header__button md-logo" aria-label="ECHOLab Hitchhicker's Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ECHOLab Hitchhicker's Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Computing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ECHOLab Hitchhicker&#39;s Guide" class="md-nav__button md-logo" aria-label="ECHOLab Hitchhicker's Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ECHOLab Hitchhicker's Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          General advice
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          General advice
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Computing
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../palife/" class="md-nav__link">
+        Palo Alto/Stanford Life
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expectations/" class="md-nav__link">
+        Lab Expectations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Graduate students
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Graduate students
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recs/" class="md-nav__link">
+        General Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../life/" class="md-nav__link">
+        Life in Palo Alto/Bay Area
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Postdocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Postdocs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../postdocs/" class="md-nav__link">
+        Postdoc Life
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Predocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Predocs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../predocs/" class="md-nav__link">
+        Predoc Life
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whois/" class="md-nav__link">
+        Us
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        Contribute to this doc
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="computing">Computing<a class="headerlink" href="#computing" title="Permanent link">#</a></h1>
+<h1 id="computation_at_stanford">Computation at Stanford<a class="headerlink" href="#computation_at_stanford" title="Permanent link">#</a></h1>
+<p>Stanford has several places for computation! All students (undergrad and grad)
+have access to <a href="https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/Main_Page">Farmshare</a>, a small cluster with a queue and with very
+limited resources. Additionally, our group has access to <a href="https://www.sherlock.stanford.edu/">Sherlock</a>, the main
+computing cluster and a very cool and powerful tool when used responsibly. </p>
+<p>We do not own any nodes at Sherlock, that means that we have to use a queue
+system and stay in line until computing resources are free to run our jobs.
+Sherlock's line is shared with all the university users, but as part of the
+School of Sustainability we have one of the largest partitions in Sherlock that
+is only used by researchers within the school. This allows our jobs to stay less
+time in the queue as the number of users is just a subset of all of Sherlock's
+users. </p>
+<h2 id="what_is_a_cluster">What is a cluster?<a class="headerlink" href="#what_is_a_cluster" title="Permanent link">#</a></h2>
+<p>A computer cluster is in rough terms a set of <em>shared</em> computers that are
+connected to each other while sharing memory and processing power. Thus, we can
+run jobs a (<em>jobs</em> is the name we give to running a script on the cluster)
+across nodes or within each of the nodes (nodes are BIG computers). All nodes
+are coordinated by a scheduler, in Sherlock case, we use <a href="https://slurm.schedmd.com/overview.html">SLURM</a>, a very flexible
+scheduler used by most of the big clusters around the world, including the
+beautiful <a href="https://arc.ucar.edu/knowledge_base/70549542">Cheyenne</a>, the NCAR super-computer. </p>
+<div class="admonition warning annotate">
+<p class="admonition-title">Sherlock is a <em><em>shared</em></em> resource</p>
+<p>Every time you use Sherlock, SLURM will penalize you and the whole lab!
+SLURM relies on the FairShare, an algorithm that decides what's the <em>fair</em>
+use of computation resources for each user and group. Therefore, everytime
+you run a job be sure of asking the resources you really need (i.e. number
+of hours, cores, and memory).</p>
+</div>
+<p>In general, clusters have three types of nodes: </p>
+<ul>
+<li><strong>Login</strong>: Nodes meant to welcome the user and meant for anything but
+   computation. They're named usually: <code>sh02-lnx</code>, where <code>x</code> is the login node
+   identity number. </li>
+<li><strong>Computing</strong>: This nodes will run jobs. Any code <em><strong>always</strong></em> runs in these
+   nodes. These nodes are named usually: <code>sh03-09n59</code>, where <code>09n59</code> is
+   a specific node in the whole cluster. </li>
+<li><strong>Storage</strong>: Rarely used, but you can access to nodes that are meant just
+   for data transmission. This can be either moving a lot of data out or to
+   Sherlock. </li>
+</ul>
+<p>In this document we will focus on the <a href="https://stanford-rc.github.io/docs-earth/">SERC partition</a>. You can check the
+partition characteristics by using the <code>sh_part</code> command. If you have access to
+other partitions or your PI (in case you have a second PI) has nodes, you will
+see the information for those nodes there too. </p>
+<h2 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">#</a></h2>
+<p>Having all the software binaries loaded into the <code>$PATH</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> can lead to chaos.
+For this reason, Sherlock uses the <a href="https://www.sherlock.stanford.edu/docs/software/modules/">Modules system</a>. Loading modules is part
+of the life in the cluster and is essential not only for running code, but also to
+compile packages (i.e. installing R's <code>sf</code> needs you to load several modules.
+Same is true for many Python libraries). </p>
+<p>Sherlock has some amazing documentation on Modules, so we won't cover that
+here. Just some basics for our lab:  </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">R</label><label for="__tabbed_1_3">Other stuff</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>module<span class="w"> </span>load<span class="w"> </span>python/3.9.0
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>module<span class="w"> </span>load<span class="w"> </span>R/4.2.0
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>module<span class="w"> </span>spider<span class="w"> </span>&lt;other<span class="w"> </span>stuff<span class="w"> </span>to<span class="w"> </span>look<span class="w"> </span><span class="k">for</span>&gt;
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">#</a></h2>
+<p>We have plenty of storage space in Sherlock! For job running, is good to use
+fast file systems, like the <code>$SCRATCH</code> space. For permanent data storage and
+files that will be concurrently used, the <code>$OAK</code> and <code>$GROUP_HOME</code> are good
+alternatives. As all good things in the cluster, remember that <code>$OAK</code> is
+a shared space within the SDSS, so think of other users before wanting to store those
+100 Tb of CMIP data you probably do not need. </p>
+<table>
+<thead>
+<tr>
+<th>Storage</th>
+<th>Path</th>
+<th>Total space</th>
+<th>Time Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$OAK</code></td>
+<td><code>/oak/stanford/schools/ees/mburke</code></td>
+<td>1 Pb [100 Tb/group]</td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+</tr>
+<tr>
+<td><code>$GROUP_HOME</code></td>
+<td><code>/home/groups/mburke</code></td>
+<td>100 Tb</td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+</tr>
+<tr>
+<td><code>$GROUP_SCRATCH</code></td>
+<td><code>/scratch/groups/mburke</code></td>
+<td>100 Tb</td>
+<td>90 days</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger annotate">
+<p class="admonition-title"><code>SCRATCH</code> is deleted every 90 days!</p>
+<p>Be careful with the scratch space! Be sure to remove all the files you need
+after you run a job. Files in this storage are not backed-up, so there will
+be no way to recover.</p>
+</div>
+<h3 id="oak">Oak<a class="headerlink" href="#oak" title="Permanent link">#</a></h3>
+<p>Oak is shared with all the SDSS. You can create folders in the root of the
+server (the path in the table above) if you need to share files with people
+across the school (i.e. ESS, EPS, or rarely, E-IPER). For lab-wide data, we use
+the <code>mburke</code> directory. We do not have any particular nomenclature for our
+filesystem, but try to be use sensible and informative names: </p>
+<ul>
+<li>🚫 <code>$OAK/mburke/results</code></li>
+<li>✅ <code>$OAK/mburke/&lt;project_name&gt;</code></li>
+<li>✅ <code>$OAK/mburke/ERA_5_1979_2023</code></li>
+</ul>
+<p>To avoid permission and possible file corruption avoid cloning repos directly
+into <code>$OAK</code>, use your <code>$HOME</code> for that and store your data in any of the
+storages described above</p>
+<h2 id="running_jobs">Running jobs<a class="headerlink" href="#running_jobs" title="Permanent link">#</a></h2>
+<p>There are different ways of running jobs in Sherlock. Compared with other clusters, Sherlock
+does not have any computing quotas, rather you can run as many jobs you want until the scheduler 
+stop giving giving you jobs. In general, we have two ways of running jobs: </p>
+<h3 id="in-line">In-line<a class="headerlink" href="#in-line" title="Permanent link">#</a></h3>
+<p>SLURM allow us to request nodes and run jobs directly into them! We have several use cases for this request: </p>
+<ul>
+<li>Testing a pipeline: I have built a Python script <code>hello.py</code> and want to test
+   it before submitting a larger job.</li>
+<li>Running small tests: I have a GPU job and I want to test my Python
+   environment is correctly compiling the right CUDA version. I cannot test
+   this is a login node. </li>
+<li>Running a Jupyter Notebook: I want to run a quick jupyter notebook without
+   having to deal with a job submission.</li>
+</ul>
+<p>In-line jobs are very useful, especially for testing and debugging, but remember that is always better to have pipelines that are less interactive and that can run unsupervised. To run in-line jobs, you have to use the <code>sdev</code> command: </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>sdev</code> commands:
+    <div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>sdev<span class="w"> </span>-h
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sdev:<span class="w"> </span>start<span class="w"> </span>an<span class="w"> </span>interactive<span class="w"> </span>shell<span class="w"> </span>on<span class="w"> </span>a<span class="w"> </span>compute<span class="w"> </span>node.
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Usage:<span class="w"> </span>sdev<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>Optional<span class="w"> </span>arguments:
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span>-c<span class="w">      </span>number<span class="w"> </span>of<span class="w"> </span>CPU<span class="w"> </span>cores<span class="w"> </span>to<span class="w"> </span>request<span class="w"> </span><span class="o">(</span>OpenMP/pthreads,<span class="w"> </span>default:<span class="w"> </span><span class="m">1</span><span class="o">)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span>-g<span class="w">      </span>number<span class="w"> </span>of<span class="w"> </span>GPUs<span class="w"> </span>to<span class="w"> </span>request<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>none<span class="o">)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span>-n<span class="w">      </span>number<span class="w"> </span>of<span class="w"> </span>tasks<span class="w"> </span>to<span class="w"> </span>request<span class="w"> </span><span class="o">(</span>MPI<span class="w"> </span>ranks,<span class="w"> </span>default:<span class="w"> </span><span class="m">1</span><span class="o">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span>-N<span class="w">      </span>number<span class="w"> </span>of<span class="w"> </span>nodes<span class="w"> </span>to<span class="w"> </span>request<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span><span class="m">1</span><span class="o">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span>-m<span class="w">      </span>memory<span class="w"> </span>amount<span class="w"> </span>to<span class="w"> </span>request<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>4GB<span class="o">)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span>-p<span class="w">      </span>partition<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>the<span class="w"> </span>job<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>dev<span class="o">)</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span>-t<span class="w">      </span><span class="nb">time</span><span class="w"> </span>limit<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span><span class="m">01</span>:00:00<span class="o">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span>-r<span class="w">      </span>allocate<span class="w"> </span>resources<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>named<span class="w"> </span>reservation<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>none<span class="o">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span>-J<span class="w">      </span>job<span class="w"> </span>name<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>sdev<span class="o">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span>-q<span class="w">      </span>quality<span class="w"> </span>of<span class="w"> </span>service<span class="w"> </span>to<span class="w"> </span>request<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>job<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>normal<span class="o">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span>Note:<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>partition<span class="w"> </span>only<span class="w"> </span>allows<span class="w"> </span><span class="k">for</span><span class="w"> </span>limited<span class="w"> </span>amount<span class="w"> </span>of<span class="w"> </span>resources.
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span>If<span class="w"> </span>you<span class="w"> </span>need<span class="w"> </span>more,<span class="w"> </span>your<span class="w"> </span>job<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>rejected<span class="w"> </span>unless<span class="w"> </span>you<span class="w"> </span>specify<span class="w"> </span>an
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span>alternative<span class="w"> </span>partition<span class="w"> </span>with<span class="w"> </span>-p.
+</span></code></pre></div></p>
+</div>
+<p>You can request a job with 1 node, 16 cores and 32 Gb of RAM in the SERC partition (just like the
+average MacBookPro) for 30 minutes using the following:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sdev -n 1 -c 16 -m 16G -p serc -t 00:30:00 --pty bash
+</span></code></pre></div>
+<p>Once you run this job, you will get assigned a job number and when the
+resources are allocated you will have access to that computing node terminal.
+Inside the computing node you have access to any folder or file stored in
+Sherlock and you can run any binary using the <code>module</code> command. </p>
+<h3 id="batch_job">Batch job<a class="headerlink" href="#batch_job" title="Permanent link">#</a></h3>
+<p>Compared to the in-line job, we won't have any access to the computing node
+terminal. The job will run completely unsupervised and if it fails then the job
+will stop executing and will be cancelled and two files will be written: an
+output file (usually with an <code>.out</code> extension), and an error file with all the
+error contents (with an <code>.err</code> extension)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Job example</label><label for="__tabbed_2_2">Another example</label><label for="__tabbed_2_3">Submit your job</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/usr/bin/bash</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1">#SBATCH --job-name=test_job</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">#SBATCH --output=test_job.out</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">#SBATCH --error=test_job.err</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1">#SBATCH --time=00:30:00</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">#SBATCH -p serc</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1">#SBATCH --nodes 1</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1">#SBATCH --mem 16GB</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1">#SBATCH -c 4</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1">#SBATCH --mail-user=ihigueme@stanford.edu</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1">#SBATCH --mail-type=ALL</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>sleep<span class="w"> </span><span class="m">10</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello from the </span><span class="si">${</span><span class="nv">HOST</span><span class="si">}</span><span class="s2">&quot;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="ch">#!/usr/bin/bash</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1">#SBATCH --job-name=test_job</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">#SBATCH --output=test_job.out</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1">#SBATCH --error=test_job.err</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1">#SBATCH --time=00:30:00</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1">#SBATCH -p gpu</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1">#SBATCH --nodes 1</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1">#SBATCH --mem 16GB</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1">#SBATCH --gpu 1</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1">#SBATCH -c 4</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1">#SBATCH --mail-user=ihigueme@stanford.edu</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="c1">#SBATCH --mail-type=ALL</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>sleep<span class="w"> </span><span class="m">10</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello from the </span><span class="si">${</span><span class="nv">HOST</span><span class="si">}</span><span class="s2"> with a GPU&quot;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>sbatch<span class="w"> </span>test_job.sbatch
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Submitted<span class="w"> </span>batch<span class="w"> </span>job<span class="w"> </span><span class="m">22312518</span><span class="w"> </span><span class="c1"># This is your job id</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>As you can see, there is some overlap between the options we used in <code>sdev</code> and
+the ones we use in our batch job file. Any SLURM command should be prepended by
+the <code>#SBATCH</code> flag, this is telling the computer that is a command for the
+scheduler and not a local variable. Let's go over some of the commands use
+above: </p>
+<dl>
+<dt><code>--job-name</code></dt>
+<dd>Name for the job. Is useful for traceability when calling <code>squeue</code> or just
+to check the history of commands ran in the past.</dd>
+<dt><code>--output</code> and <code>--error</code></dt>
+<dd>Name for output and error files. Usually saved in the same directory where
+the batch file is located. You can specify another path. If left empty, the
+default will be <code>&lt;job-name&gt;&lt;job-id&gt;.err</code></dd>
+<dt><code>--time</code></dt>
+<dd>Time we are asking the scheduler to keep the job alive. Once the time is
+done, the job will be stopped. Plan accordignly and test before running a long
+job. Sherlock has limits, so jobs shouldn't last more than 7 days.</dd>
+<dt><code>-p</code></dt>
+<dd>Paritition. The default is using the main queue, but there are many
+available (list them using the <code>sh_part</code> command). Use <code>dev</code> if you want to
+test, and <code>serc</code> when you're ready to send jobs.</dd>
+<dt><code>--nodes</code></dt>
+<dd>Number of nodes to request. Usually this is set to 1 because it fits most of
+   the vanilla parallelization schemes in Python and R. Use more than 1 node
+   if, and only if, you're using OpenMPI powered code (i.e. C++ processes and
+   sometimes Python's Dask). If using more than one node, many new options are
+   open: <code>--ntasks-per-node</code>, and <code>--cpus-per-task</code>. Read more on the SLURM
+   documentation.  </dd>
+<dt><code>--mem</code> and <code>--cpu</code></dt>
+<dd>These two options set how much memory and cores you need. Remember that as
+   a thumb of rule, these two go together. The more cores you use in
+   parallelization, the more memory you will need since cores are sharing data
+   over RAM. <code>serc</code> nodes have between 24 and 128 cores, and between  191G and
+   1024G of RAM memory. Your job should not exceed any of these limits, and
+   usually not be even close to that maximum. Adding more memory and more cores is
+   often not a good solution to slow code (check out the piece about the Amdahl's Rule <a href="https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial">here</a>). </dd>
+<dt><code>--mail-user</code> and <code>--mail-type</code></dt>
+<dd>This is nice-to-have in your job, especially if you're in a long queue. This
+   command will send an email to the email under <code>mail-user</code> once the job started
+   to run, finished to run, or just failed. Usually has nice data on usage that
+   you can use to set your next job. </dd>
+</dl>
+<h2 id="some_tricks_and_common_issues_in_sherlock">Some tricks and common issues in Sherlock<a class="headerlink" href="#some_tricks_and_common_issues_in_sherlock" title="Permanent link">#</a></h2>
+<h3 id="tricks">Tricks<a class="headerlink" href="#tricks" title="Permanent link">#</a></h3>
+<h4 id="do_ssh_like_a_pro">Do <code>ssh</code> like a pro<a class="headerlink" href="#do_ssh_like_a_pro" title="Permanent link">#</a></h4>
+<p>Tired of doing <code>ssh &lt;user&gt;@sherlock.stanford.edu</code> and being thrown into whatever login node they want? Want to set up an SSH-tunnel from the get-go with a pre-determined port (v.gr. this is very useful for running Jupyter notebooks in Sherlock nodes)? The <a href="https://linuxize.com/post/using-the-ssh-config-file/">SSH config</a> is what you need. The Sherlock documentation has <a href="https://www.sherlock.stanford.edu/docs/advanced-topics/connection/#ssh-options">some details</a> on this.  </p>
+<h4 id="tmux_is_your_best_friend"><code>tmux</code> is your best friend<a class="headerlink" href="#tmux_is_your_best_friend" title="Permanent link">#</a></h4>
+<p>Back in the day, life in the terminal was the common place. Unix has developed
+very good window managers that allow you to have horizontal and vertical
+splits, and several windows within a unique <code>ssh</code> connection. More importantly,
+these managers also allow you to run a process and let it run even if you
+disconnect from Sherlock. There are two main programs that serve this
+functions: <code>screen</code> and <code>tmux</code>. The later is better maintained, and is also my
+favorite ❤️</p>
+<p>Tmux has a good <a href="https://github.com/tmux/tmux/wiki/Getting-Started">starter guide</a>, and is extremely configurable using its
+dotfile: <code>~/.tmux.conf</code>. I know, what the heck are dotfiles? Check out more
+about them <a href="https://driesvints.com/blog/getting-started-with-dotfiles/">here</a>. </p>
+<h4 id="building_bash_scripts">Building bash scripts<a class="headerlink" href="#building_bash_scripts" title="Permanent link">#</a></h4>
+<p>An essential tool of the terminal is to learn how to run basic bash files. These files are very flexible and allow to build command-line interfaces: </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">A simple bash file: <code>hello.sh</code></label><label for="__tabbed_3_2">A bash file with commands</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello world!&quot;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Print whatever argument we put on the command</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nv">$ARG</span><span class="o">=</span><span class="nv">$1</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;{</span><span class="nv">$ARG</span><span class="s2">}&quot;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Bash is incredibly flexible and powerful. These scripts are particularly useful
+when creating batch jobs or just simplifying how we run code. More details on how
+to write and run these are <a href="https://swcarpentry.github.io/shell-novice/06-script.html">here</a>.</p>
+<h3 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">#</a></h3>
+<h4 id="my_windows_machine_is_not_compatible_with_x_y_or_z">My Windows machine is not compatible with X, Y or Z<a class="headerlink" href="#my_windows_machine_is_not_compatible_with_x_y_or_z" title="Permanent link">#</a></h4>
+<p>Truly unfortunate. You have a 2K one-time grant as a SDSS student. Change
+computers, many good Linux Machines are also available with better specs than
+a MacBook Pro at a similar price range. If you want to stay with Windows, update
+to the Windows 10/11 edition and install the Ubuntu terminal. </p>
+<h4 id="i_dont_have_access_to_oak_what_should_i_do">I don't have access to <code>$OAK</code>, what should I do?<a class="headerlink" href="#i_dont_have_access_to_oak_what_should_i_do" title="Permanent link">#</a></h4>
+<dl>
+<dd>Checkout the SERC OAK <a href="https://stanford-rc.github.io/docs-earth/docs/getting-started-oak">documentation</a></dd>
+</dl>
+<h4 id="my_job_is_stuck_in_priority">My job is stuck in <code>(Priority)</code><a class="headerlink" href="#my_job_is_stuck_in_priority" title="Permanent link">#</a></h4>
+<dl>
+<dd>Life is hard. Just wait</dd>
+</dl>
+<h5 id="i_need_some_help_with_my_code">I need some help with my code<a class="headerlink" href="#i_need_some_help_with_my_code" title="Permanent link">#</a></h5>
+<dl>
+<dd>Getting help for Sherlock is quite easy. You can either ask for help to
+people in the lab, or you can also use the <code>#sherlock-users</code> channel on Slack
+where Kilian Cavalotti or any of the cluster's users are happy to help you with
+any problem. You can also check many of the great <a href="https://stanford-rc.github.io/docs-earth/docs/resources_overview#pancakes-resources">resources</a> put together by
+the SDSS-CFS</dd>
+</dl>
+<h2 id="a_few_remarks_on_environment_reproducibility">A few remarks on environment reproducibility<a class="headerlink" href="#a_few_remarks_on_environment_reproducibility" title="Permanent link">#</a></h2>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">#</a></h3>
+<p>Sherlock modules do not include any distribution of Anaconda. If you want to
+install Conda<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> or <a href="https://mamba.readthedocs.io/en/latest/">Mamba</a>, you should install it on your <code>$HOME</code>
+directory. Nonetheless, these Python distributions are very bloated and do not
+play well with Sherlock. An alternative to this is to load the <code>python/3.9.0</code>
+module, and then use <code>vritualenv</code>. </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Load modules and install virtualenv</label><label for="__tabbed_4_2">Create environment</label><label for="__tabbed_4_3">Activate environment</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>module<span class="w"> </span>load<span class="w"> </span>python/3.9.0
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># pip will install libraries locally in the $HOME</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>pip<span class="w"> </span>install<span class="w"> </span>virtualenv<span class="w"> </span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>virtualenv<span class="w"> </span>-p<span class="w"> </span>python<span class="w"> </span><span class="nv">$SCRATCH</span>/test_env
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">source</span><span class="w"> </span><span class="nv">$SCRATCH</span>/test_env/bin/activate
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># Test that I am using my environment python</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># This should print the path to the environment</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>which<span class="w"> </span>python
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># Once you check is the right path, you can install some libraries</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Notice that I am creating my environment in the <code>$SCRATCH</code> space, this is due
+to space limitations in the <code>$HOME</code>. Sherlock only allows 15 Gb in your home
+directory, thus you should avoid to put environment or big files on it. Once
+you have reached your quota, Sherlock will stop writing files and this can lead
+to data corruption. </p>
+<p>You do not need to use <code>$SCRATCH</code>, you can use either <code>$GROUP_HOME</code> or <code>$GROUP_SCRATCH</code>.
+Be aware you cannot share environments with people across the group, this
+because of permissions. A solution to this is always keeping
+a <code>requirements.txt</code> updated so people can reproduce your Python environment.
+A more advanced alternative is to use <a href="https://www.sherlock.stanford.edu/docs/software/using/singularity/">Singularity</a>, a containerization 
+module created specifically for HPC systems and developed by Stanford. </p>
+<h4 id="a_note_on_condamamba_on_sherlock">A note on Conda/Mamba on Sherlock<a class="headerlink" href="#a_note_on_condamamba_on_sherlock" title="Permanent link">#</a></h4>
+<p>By default, <code>conda</code> will install environments in your <code>$HOME</code> directory. Conda
+does not only install Python libraries, but also many binaries that it needs 
+to compile package installation, this includes its own version of <code>gcc</code> and 
+its own <code>C++</code> libraries. Be aware that many of these are not optimized to 
+Sherlock's hardware, and you should avoid these if you are looking for max
+performance (i.e. Sherlock has it's own compilation of PyTorch just to play
+nice with its GPUs). </p>
+<p>A solution to Conda's storage problem is to change your <code>~/.condarc</code> file and
+use the following (remember to change your user name in the file below)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1"><code>~/.condarc</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nt">always_yes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nt">envs_dirs</span><span class="p">:</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/scratch/users/{your user name}/conda_envs</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nt">channels</span><span class="p">:</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defaults</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nt">channel_priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">strict</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>More details in how to manage <code>virtualenv</code> environments is <a href="https://pythonbasics.org/virtualenv/">here</a>.</p>
+<h2 id="some_reading_material">Some reading material<a class="headerlink" href="#some_reading_material" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2101.06737">Ten Simple Rules for Success with HPC - Imperial College</a></li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>This is the environment that contains the path to the executables we want
+to run. Go ahead and run <code>echo $PATH</code> to see where is the computer looking for
+executable binaries.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>I do recommend to use Mamba over Conda, is not only faster, but also way
+more reliable and based on the <code>conda-forge</code> channel.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 ECHOLab
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/StanfordECHOLab" target="_blank" rel="noopener" title="Our twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.tabs.link", "content.code.copy", "navigation.instant", "navigation.path"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../javascripts/mathjax.js"></script>
+        
+      
+        
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+    
+  </body>
+</html>
