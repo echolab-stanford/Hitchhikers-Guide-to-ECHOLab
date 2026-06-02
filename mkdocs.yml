@@ -29,6 +29,9 @@ nav:
     - 'palife.md'
     - 'resources.md'
     - 'expectations.md'
+    - 'ECHOLab Onboarding': 'echolab_onboarding.md'
+    - 'Employee Onboarding': 'new_employee_onboarding.md'
+    
   - Graduate students:
     - 'recs.md'
     - 'life.md'
