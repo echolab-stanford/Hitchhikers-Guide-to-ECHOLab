@@ -1,8 +1,6 @@
-new_employee_onboarding.md
-
 # New Employee Onboarding Checklist
 
-
+This checklist covers Stanford-specific onboarding tasks for newly hired ECHOLab employees, including campus access and office setup.
 
 ## Campus and Office Setup
 
@@ -16,4 +14,3 @@ new_employee_onboarding.md
 - [ ] **Office key**
     - Obtain a key for your shared office (Y2E2 362).
     - Sonal can assist with this process.
-
