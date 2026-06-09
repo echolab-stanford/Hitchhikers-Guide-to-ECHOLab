@@ -29,16 +29,13 @@ nav:
     - 'resources.md'
    
   - Research:
-       - Research Workflows: research/workflows.md
-       - GitHub Projects: research/github_projects.md
-       - Shared Data Catalog: research/dataset_catalog.md
-       - Oak Storage: research/oak_storage.md
-       - Working with Oak: research/working_with_oak.md
-       - Data Governance: research/data_governance.md
-       - Sherlock: research/computing.md
-
-    - 'dataset_catalog.md'
-    - 'computing.md'
+    - Research Workflows: research/workflows.md
+    - GitHub Projects: research/github_projects.md
+    - Shared Data Catalog: research/dataset_catalog.md
+    - Oak Storage: research/oak_storage.md
+    - Working with Oak: research/working_with_oak.md
+    - Data Governance: research/data_governance.md
+    - Sherlock: research/computing.md
 
     
 
