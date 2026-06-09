@@ -25,23 +25,41 @@ theme:
 nav:
   - Home: index.md
   - General advice:
-    - 'computing.md'
     - 'palife.md'
     - 'resources.md'
-    - 'expectations.md'
-    - 'ECHOLab Onboarding': 'echolab_onboarding.md'
-    - 'Employee Onboarding': 'new_employee_onboarding.md'
+   
+  - Research:
+       - Research Workflows: research/workflows.md
+       - GitHub Projects: research/github_projects.md
+       - Shared Data Catalog: research/dataset_catalog.md
+       - Oak Storage: research/oak_storage.md
+       - Working with Oak: research/working_with_oak.md
+       - Data Governance: research/data_governance.md
+       - Sherlock: research/computing.md
+
+    - 'dataset_catalog.md'
+    - 'computing.md'
+
     
+
+  - Lab Operations:
+    - 'ECHOLab Onboarding': 'operations/echolab_onboarding.md'
+    - 'New Employee Onboarding': 'operations/new_employee_onboarding.md'
+    - 'Echolab Offboarding': 'operations/echolab_offboarding.md'
+    - 'HR Related Topics': 'operations/hr_topics.md'
+    - 'Lab Expectations': 'operations/expectations.md'
+
+
   - Graduate students:
-    - 'recs.md'
-    - 'life.md'
+    - 'gradstudent/recs.md'
+    - 'gradstudent/life.md'
   - Postdocs:
-    - 'postdocs.md'
+    - 'postdoc/postdocs.md'
   - Predocs: 
-    - 'predocs.md'
+    - 'predoc/predocs.md'
   - About: 
-    - 'Us': 'whois.md'
-    - 'Contribute to this doc': 'contribute.md'
+    - 'Us': 'about/whois.md'
+    - 'Contribute to this doc': 'about/contribute.md'
 
 markdown_extensions:
   - toc:
