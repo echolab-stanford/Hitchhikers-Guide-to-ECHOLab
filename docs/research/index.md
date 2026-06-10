@@ -10,8 +10,8 @@ A key objective is that a new collaborator should be able to get up to speed on 
 
 ### Starting a New Project
 
-* [GitHub Projects](github_projects.md)
-* [ECHOLab Project Template](https://github.com/echolab-stanford/echolab-newproject-template)
+* [Project Documentation](project_documentation.md)
+* [Project Documentation Template](https://github.com/echolab-stanford/echolab-newproject-template)
 
 ### Looking for Data
 
@@ -27,9 +27,10 @@ A key objective is that a new collaborator should be able to get up to speed on 
 
 * [ECHOLab Computing Guide](computing.md)
 
-### Preparing Replication Materials
+### Preparing for Replication 
 
-* [GitHub Projects](github_projects.md)
+* [Pre-Publication Internal Replication](internal_replication.md)
+* [Post-Publication External Replication](external_replication.md)
 
 ## Research Infrastructure
 
