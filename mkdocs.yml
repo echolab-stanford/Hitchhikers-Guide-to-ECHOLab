@@ -30,7 +30,7 @@ nav:
    
   - Research:
     - Research Resources: research/index.md
-    - GitHub Projects: research/github_projects.md
+    - Project Documentation: research/project_documentation.md
     - Oak Storage: research/oak_storage.md
     - Working with Oak: research/working_with_oak.md
     - Shared Data Catalog: research/dataset_catalog.md
