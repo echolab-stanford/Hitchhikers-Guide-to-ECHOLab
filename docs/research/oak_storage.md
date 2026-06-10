@@ -6,14 +6,14 @@ Oak is Stanford's high-capacity research storage system and serves as ECHOLab's 
 
 Most lab datasets, project data, and shared resources should be stored on Oak whenever practical. Researchers use Oak to store large datasets, share data across projects, and access resources from both local machines and Sherlock.
 
-Within ECHOLab, Oak is generally considered the canonical location for shared data resources. While researchers may maintain local working copies of datasets, Oak should be treated as the primary source of truth for lab-managed data.
+Within ECHOLab, Oak is generally considered the canonical location for shared data resources. While researchers may maintain local working copies of datasets, Oak should be treated as the primary storage location for lab-mangaed data.
 
 !!! note
 
 ```
 Oak is ECHOLab's primary platform for shared data storage.
 
-Researchers are encouraged to store shared datasets on Oak whenever practical rather than maintaining project-critical data solely on local machines.
+Researchers are encouraged to store shared datasets relaed to shared projects on Oak whenever practical rather than maintaining shared project-critical data solely on local machines.
 ```
 
 ## Why We Use Oak
@@ -64,7 +64,7 @@ Analysis performed locally or on Sherlock
 
 Researchers should become familiar with both systems early in their time in the lab.
 
-For detailed guidance on Sherlock, see the ECHOLab Computing Guide.
+For detailed guidance on Sherlock, see the [ECHOLab Computing Guide](computing.md).
 
 ---
 
@@ -87,7 +87,7 @@ The existence of a file on a researcher's laptop should not be assumed to imply 
 
 ### Local Mirrors Are Not Automatically Synchronized
 
-Synchronization between Oak and local machines is generally an explicit action.
+Note that synchronization between Oak and local machines is generally an explicit action.
 
 This means:
 
@@ -99,40 +99,49 @@ Always verify what will be transferred before performing large synchronization o
 
 ## Connecting to Oak
 
-Many researchers find it convenient to mount Oak locally using SSHFS.
+It is sometimes convenient to access Oak directly from your local machines using SSHFS. Mounting Oak locally can make it easier to browse files, inspect datasets, and work with project resources without repeatedly copying data between systems.
 
-> TODO: Add current ECHOLab-recommended SSHFS setup instructions.
+Typical setup steps include:
 
-Topics to cover:
+1. Configure SSH access to Oak.
+2. Create a local mount point (e.g., `~/oak`).
+3. Mount Oak using SSHFS.
+4. Configure SSH keys to reduce repeated two-factor authentication prompts.
+5. Access Oak through Finder or the command line.
 
-* Mounting Oak locally
-* Unmounting Oak
-* SSH key setup
-* Avoiding repeated two-factor authentication
-* Locating mounted drives
+Researchers who regularly work with Oak may find it helpful to create shell aliases for mounting and unmounting Oak.
 
-## Data Synchronization
+Example workflow:
 
-Many ECHOLab researchers maintain local mirrors of large datasets and use `rsync` to synchronize files between Oak and local machines.
+```text
+Local Machine
+      ↓
+ Mount Oak with SSHFS
+      ↓
+ Access files through ~/oak
+      ↓
+ Synchronize data as needed with rsync
+```
 
-Recommended workflow:
+Oak can also be accessed directly through SSH and rsync without mounting the filesystem locally. This approach is often more reliable for large file transfers and automated workflows.
 
-1. Preview transfers with a dry run.
-2. Verify expected changes.
-3. Run the actual synchronization command.
+For current Stanford-specific setup instructions, see the official Oak documentation.
 
-> TODO: Add recommended ECHOLab rsync workflows and example aliases.
 
-Topics to cover:
+### Synchronization Best Practices
 
-* Oak → Local synchronization
-* Local → Oak synchronization
-* Dry runs
-* Common synchronization pitfalls
-* Working with large datasets
-* Oak ↔ Sherlock workflows
+Researchers may maintain local working copies of datasets while storing shared resources on Oak.
 
----
+When synchronizing files:
+
+* Use dry runs before large transfers whenever possible.
+* Verify that files are moving in the expected direction.
+* Be especially cautious when overwriting or deleting files.
+* Remember that synchronization is not automatic.
+* Confirm that important local work has been copied back to Oak.
+
+In general, Oak should be treated as the authoritative copy of shared project data, while local copies should be treated as working copies.
+
 
 # Oak Permissions
 
@@ -264,14 +273,12 @@ Potential examples:
 
 ---
 
-# Additional Resources
+## Related Resources
 
-Official Stanford documentation:
-
-* Oak Storage Overview
-* Oak User Guide
-* Oak Permissions Documentation
+- [Working with Oak](working_with_oak.md)
+- [Managing Shared Data](data_governance.md)
+- [Official Oak Documentation](https://docs.oak.stanford.edu/user-guide/)
 
 These resources describe the underlying storage system and institutional policies. The ECHOLab documentation focuses on lab-specific workflows, conventions, and best practices.
 
-For detailed guidance on using Sherlock, see the ECHOLab Computing Guide.
+For detailed guidance on using Sherlock, see the [ECHOLab Computing Guide](computing.md)

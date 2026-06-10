@@ -15,6 +15,8 @@ is only used by researchers within the school. This allows our jobs to stay less
 time in the queue as the number of users is just a subset of all of Sherlock's
 users. 
 
+Note: If you do not yet have access to Sherlcok you need to request access through Stanford Research Computing.  
+
 ## What is a cluster? 
 
 A computer cluster is in rough terms a set of _shared_ computers that are

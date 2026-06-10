@@ -12,6 +12,8 @@ Researchers commonly interact with Oak in one of three ways:
 
 This page provides guidance on common workflows used within ECHOLab.
 
+Note: Oak resources are organized by PI. If you haven't already been added to Oak/mburke reach out to Sam. 
+
 ---
 
 ## Core Principles
