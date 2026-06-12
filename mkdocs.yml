@@ -25,8 +25,8 @@ theme:
 nav:
   - Home: index.md
   - General advice:
-    - Paly Life: 'palife.md'
-    - Personal Resource: 'resources.md'
+    - Paly Life: 'general/palife.md'
+    - Personal Resource: 'generalresources.md'
    
   - Research:
     - Research Resources: research/index.md
