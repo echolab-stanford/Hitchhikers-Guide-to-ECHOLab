@@ -26,7 +26,7 @@ nav:
   - Home: index.md
   - General advice:
     - Paly Life: 'general/palife.md'
-    - Personal Resource: 'generalresources.md'
+    - Personal Resource: 'general/resources.md'
    
   - Research:
     - Research Resources: research/index.md
