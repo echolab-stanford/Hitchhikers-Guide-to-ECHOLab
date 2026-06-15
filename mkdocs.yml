@@ -86,6 +86,8 @@ markdown_extensions:
 plugins:
   - search: {}
   - encryptcontent:
+      global_password: !ENV [MKDOCS_PASSWORD, ""]
+      remember_password: true
       title_prefix: '🔒'
       password_button: true
       password_button_text: 'Decrypt'
