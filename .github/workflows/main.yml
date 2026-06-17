@@ -14,3 +14,5 @@ jobs:
           python-version: 3.8
       - run: pip install mkdocs mkdocs-material mkdocs-encryptcontent-plugin
       - run: mkdocs gh-deploy --force --verbose
+        env:
+          MKDOCS_PASSWORD: ${{ secrets.MKDOCS_PASSWORD }}
