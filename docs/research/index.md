@@ -22,7 +22,9 @@ Identifying research questions, finding gaps in the literature, evaluating novel
 
 Developing project concepts, preparing grant proposals, building collaborations, and translating ideas into funded research.
 
-*(Page under development.)*
+* [Tips on Writing Grants]()
+* [Internal Funding Opportunities for PhD Students and Postdocs](internal_fellowships.md)
+
 
 ### 3. Project Setup and Organization
 
@@ -107,6 +109,10 @@ Future topics:
 * [Shared Data Catalog](dataset_catalog.md)
 * [Managing Shared Data](data_governance.md)
 
+### Creating a new shared dataset
+
+* [Created Shared Data](create_dataset.md)
+
 ### Accessing Oak
 
 * [Oak Storage](oak_storage.md)
@@ -120,6 +126,10 @@ Future topics:
 
 * [Pre-Publication Internal Replication](internal_replication.md)
 * [Post-Publication External Replication](external_replication.md)
+
+### PhD students and postdocs looking for funding?
+
+* [Internal Funding Opportunities](internal_fellowships.md)
 
 ## Research Infrastructure
 
