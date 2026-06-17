@@ -18,8 +18,8 @@ Looking for something specific?
 | Finding a shared dataset      | [Shared Dataset Catalog](dataset_catalog.md)              |
 | Creating a shared dataset     | [Creating a Shared Dataset](create_dataset.md)            |
 | Finding reusable code         | [Shared Software Resources](shared_software.md)           |
-| Accessing Oak                 | [Oak Storage](oak_storage.md)                             |
-| Using Sherlock                | [Working with Sherlock](computing.md)                     |
+| Working with Oak              | [Oak Storage](oak_storage.md)                             |
+| Working with Sherlock         | [Working with Sherlock](computing.md)                     |
 | Finding funding opportunities | [Internal Funding Opportunities](internal_fellowships.md) |
 | Designing figures             | [Figure Design](figures.md)                               |
 | Submitting a paper            | [Submitting Your Paper](submitting.md)                    |
