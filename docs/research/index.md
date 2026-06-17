@@ -1,34 +1,79 @@
 # Research Resources
 
-This section describes common research workflows and shared resources used within ECHOLab.
+This section describes common research workflows and shared resources used within ECHOlab.
 
 The goal is not to prescribe a single workflow, but to make it easier for researchers to find data, understand projects, access computing resources, and collaborate effectively.
 
-A key objective is that a new collaborator should be able to get up to speed on a project quickly through project documentation and know where to find the resources needed to understand, reproduce, and extend prior work.
+A key objective is that a new collaborator should be able to get up to speed on a project quickly and know where to find the resources needed to understand, reproduce, and extend prior work.
+
+## Guiding Principle
+
+> Standardize interfaces, not workflows.
+
+Researchers should have flexibility in how they conduct analyses and organize day-to-day work. However, projects should provide sufficient documentation and structure that future collaborators can understand project goals, locate resources, and contribute effectively.
+
+The broader goal is to make projects, data, decisions, and workflows easy for future collaborators to discover, understand, reproduce, and extend.
+
+## Quick Links
+
+Looking for something specific?
+
+| Task                          | Resource                                                  |
+| ----------------------------- | --------------------------------------------------------- |
+| Starting a new project        | [Project Documentation](project_documentation.md)         |
+| Finding data                  | [Shared Data Catalog](dataset_catalog.md)                 |
+| Creating a shared dataset     | [Creating a Shared Dataset](create_dataset.md)            |
+| Finding reusable code         | [Shared Software Resources](shared_software.md)           |
+| Accessing Oak                 | [Oak Storage](oak_storage.md)                             |
+| Using Sherlock                | [Working with Sherlock](computing.md)                     |
+| Finding funding opportunities | [Internal Funding Opportunities](internal_fellowships.md) |
+| Designing figures             | [Figure Design](figures.md)                               |
+| Submitting a paper            | [Submitting Your Paper](submitting.md)                    |
+| Talking to the media          | [Speaking with the Media](media.md)                       |
+| Preparing for replication     | [Replication Guides](internal_replication.md)             |
+
+---
 
 ## Research Workflow
 
-Research projects involve many stages, from idea generation through publication and dissemination. This section is intended to help researchers identify resources that may be useful at different points in the research process.
+Research projects involve many stages, from idea generation through publication and dissemination. The workflow below is not intended to be prescriptive. Instead, think of it as a guide to finding relevant resources based on where you are in a project.
 
-The workflow below is not intended to be prescriptive. Projects rarely follow a linear path, and different researchers work in different ways. Instead, think of this page as a guide to finding relevant resources based on where you are in a project.
+```text
+Idea
+ ↓
+Funding
+ ↓
+Project Setup
+ ↓
+Data & Code
+ ↓
+Analysis
+ ↓
+Figures
+ ↓
+Writing
+ ↓
+Publication
+ ↓
+Replication
+```
 
 ### 1. Research Idea Generation
 
-Identifying research questions, finding gaps in the literature, evaluating novelty, and developing project ideas.
+Identifying research questions, evaluating novelty, and developing project ideas.
 
-* [Geneating Research Ideas](idea_generation.md)
+* [Generating Research Ideas](idea_generation.md)
 
 ### 2. Grant Writing and Project Development
 
-Developing project concepts, preparing grant proposals, building collaborations, and translating ideas into funded research.
+Developing project concepts, preparing grant proposals, building collaborations, and identifying funding opportunities.
 
-*(Page under development.)*
+* Tips on Writing Grants *(coming soon)*
+* [Internal Funding Opportunities for PhD Students and Postdocs](internal_fellowships.md)
 
 ### 3. Project Setup and Organization
 
-Creating a new project, selecting a repository structure, organizing files, establishing documentation, and planning for reproducibility.
-
-Resources:
+Creating a new project, establishing documentation, and planning for reproducibility.
 
 * [Project Documentation](project_documentation.md)
 * [Project Documentation Template](https://github.com/echolab-stanford/echolab-newproject-template)
@@ -36,46 +81,36 @@ Resources:
 
 ### 4. Finding and Managing Data and Code
 
-Identifying relevant datasets, using shared lab resources, documenting data sources, and promoting data reuse.
-
-Resources:
+Identifying datasets, documenting resources, and promoting reuse.
 
 * [Shared Data Catalog](dataset_catalog.md)
-* [Managing Shared Data](data_governance.md)
+* [Guidelines for Managing Shared Data](data_governance.md)
+* [Creating a Shared Dataset](create_dataset.md)
 * [Oak Storage](oak_storage.md)
-* [Shared Code Resources](shared_software.md)
-
+* [Shared Software Resources](shared_software.md)
 
 ### 5. Project Analysis and Code Development
 
-Organizing code, developing workflows, collaborating with others, and maintaining reproducible analyses.
-
-Resources:
+Developing workflows, collaborating with others, and maintaining reproducible analyses.
 
 * [Working with Sherlock](computing.md)
 * [Working with Oak](working_with_oak.md)
 
 ### 6. Figure Design and Data Visualization
 
-Communicating results effectively through figures, visual summaries, and graphical storytelling.
+Communicating results through figures, visual summaries, and graphical storytelling.
 
-Resources:
-
-* [Figure Design](figures.md) 
+* [Figure Design](figures.md)
 
 ### 7. Scientific Writing
 
-Structuring papers, communicating clearly, responding to reviewers, and developing a writing style.
-
-Resources:
+Structuring papers, communicating clearly, and responding to reviewers.
 
 * Scientific Writing *(coming soon)*
 
 ### 8. Publication and Dissemination
 
-Selecting journals, navigating submission and revision, preparing press materials, and communicating research findings to broader audiences.
-
-Resources:
+Publishing and communicating research findings.
 
 * [Submitting Your Paper](submitting.md)
 * [Speaking with the Media About Your Research](media.md)
@@ -83,8 +118,6 @@ Resources:
 ### 9. Reproducibility and Replication
 
 Ensuring that future collaborators can understand, reproduce, and extend a project.
-
-Resources:
 
 * [Pre-Publication Internal Replication](internal_replication.md)
 * [Post-Publication External Replication](external_replication.md)
@@ -94,48 +127,3 @@ Future topics:
 * Documentation Review
 * Project Archiving
 * Research Handoffs
-
-## Common Tasks
-
-### Starting a New Project
-
-* [Project Documentation](project_documentation.md)
-* [Project Documentation Template](https://github.com/echolab-stanford/echolab-newproject-template)
-
-### Looking for Data
-
-* [Shared Data Catalog](dataset_catalog.md)
-* [Managing Shared Data](data_governance.md)
-
-### Accessing Oak
-
-* [Oak Storage](oak_storage.md)
-* [Working with Oak](working_with_oak.md)
-
-### Using Sherlock
-
-* [Working with Sherlock](computing.md)
-
-### Preparing for Replication
-
-* [Pre-Publication Internal Replication](internal_replication.md)
-* [Post-Publication External Replication](external_replication.md)
-
-## Research Infrastructure
-
-| Resource | Purpose                                        |
-| -------- | ---------------------------------------------- |
-| GitHub   | Project documentation, code, and collaboration |
-| Oak      | Shared data storage                            |
-| Sherlock | High-performance computing                     |
-| Overleaf | Manuscript development                         |
-| Notion   | Project management                             |
-| Slack    | Communication                                  |
-
-## Guiding Principle
-
-> Standardize interfaces, not workflows.
-
-Researchers should have flexibility in how they conduct analyses and organize day-to-day work. However, projects should provide sufficient documentation and structure that future collaborators can understand project goals, locate resources, and contribute effectively.
-
-The broader goal is to make projects, data, decisions, and workflows easy for future collaborators to discover, understand, reproduce, and extend.
