@@ -62,6 +62,32 @@ Example project resources:
 - Published Paper
 - Public Replication Repository
 
+## Project Data Organization
+
+Most projects will store large datasets, intermediate files, and outputs on Oak rather than GitHub.
+
+Project repositories should document where project data are stored and how they are organized.
+
+A typical Oak project directory might look like:
+
+project_name/
+├── raw/
+├── intermediate/
+├── clean/
+├── outputs/
+└── documentation/
+
+Exact organization may vary across projects. The goal is not to enforce a single structure, but to ensure that future collaborators can easily identify:
+
+- Raw data inputs
+- Intermediate processing outputs
+- Analysis-ready datasets
+- Figures and tables
+- Documentation
+
+The project README should indicate where project data are stored and provide links or paths to important directories when appropriate.
+
+
 ## GitHub and Other Tools
 
 GitHub is one component of a broader project workflow.
@@ -103,11 +129,12 @@ Personal repositories remain appropriate for exploratory work, software projects
 Suggested workflow:
 
 1. Create a repository from the [ECHOLab project template](https://github.com/echolab-stanford/echolab-newproject-template) within the ECHOLab GitHub organization.
-2. Complete the project README.
-3. Create project-specific collaboration and project management resources as needed (e.g., Notion page, Slack channel, shared notes, etc.).
-4. Create an Overleaf project if applicable. 
-5. Identify data storage locations.
-6. Link project resources from the repository.
+2. Create a project directory on Oak.
+3. Complete the project README.
+4. Create project-specific collaboration and project management resources as needed (e.g., Notion page, Slack channel, shared notes, etc.).
+5. Create an Overleaf project if applicable. 
+6. Identify data storage locations.
+7. Link project resources from the repository.
 
 ## Replication Materials
 

@@ -2,17 +2,11 @@
 
 This section describes common research workflows and shared resources used within ECHOlab.
 
-The goal is not to prescribe a single workflow, but to make it easier for researchers to find data, understand projects, access computing resources, and collaborate effectively.
+The goal is to make projects, data, and workflows easy for future collaborators to discover, understand, reproduce, and extend.
 
-A key objective is that a new collaborator should be able to get up to speed on a project quickly and know where to find the resources needed to understand, reproduce, and extend prior work.
+The guiding princple is that researchers should have flexibility in how they work, but projects should provide sufficient documentation and structure that others can quickly understand, reproduce, and build upon prior work.
 
-## Guiding Principle
 
-> Standardize interfaces, not workflows.
-
-Researchers should have flexibility in how they conduct analyses and organize day-to-day work. However, projects should provide sufficient documentation and structure that future collaborators can understand project goals, locate resources, and contribute effectively.
-
-The broader goal is to make projects, data, decisions, and workflows easy for future collaborators to discover, understand, reproduce, and extend.
 
 ## Quick Links
 
@@ -20,8 +14,8 @@ Looking for something specific?
 
 | Task                          | Resource                                                  |
 | ----------------------------- | --------------------------------------------------------- |
-| Starting a new project        | [Project Documentation](project_documentation.md)         |
-| Finding data                  | [Shared Data Catalog](dataset_catalog.md)                 |
+| Starting a new project        | [Project Organization](project_documentation.md)          |
+| Finding a shared dataset      | [Shared Dataset Catalog](dataset_catalog.md)              |
 | Creating a shared dataset     | [Creating a Shared Dataset](create_dataset.md)            |
 | Finding reusable code         | [Shared Software Resources](shared_software.md)           |
 | Accessing Oak                 | [Oak Storage](oak_storage.md)                             |
@@ -36,7 +30,7 @@ Looking for something specific?
 
 ## Research Workflow
 
-Research projects involve many stages, from idea generation through publication and dissemination. The workflow below is not intended to be prescriptive. Instead, think of it as a guide to finding relevant resources based on where you are in a project.
+Research projects involve many stages, from idea generation through publication and dissemination. The workflow below is not intended to be prescriptive. Instead, it is intended to be a guide for finding relevant resources based on where you are in a project.
 
 ```text
 Idea
@@ -75,7 +69,7 @@ Developing project concepts, preparing grant proposals, building collaborations,
 
 Creating a new project, establishing documentation, and planning for reproducibility.
 
-* [Project Documentation](project_documentation.md)
+* [Project Documentation and Organization](project_documentation.md)
 * [Project Documentation Template](https://github.com/echolab-stanford/echolab-newproject-template)
 * [Project Communication Guidelines](communication.md)
 
