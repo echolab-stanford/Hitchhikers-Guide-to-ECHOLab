@@ -15,14 +15,14 @@ Before searching for individual fellowship programs, researchers should review S
 A searchable database of internal funding opportunities available across Stanford.
 
 **Website:**
-https://researchadmin-humsci.stanford.edu/funding-opportunities/search-internal-funding
+[https://researchadmin-humsci.stanford.edu/funding-opportunities/search-internal-funding](https://researchadmin-humsci.stanford.edu/funding-opportunities/search-internal-funding)
 
 ### Stanford School of Medicine Internal Funding Opportunities
 
 A curated collection of funding opportunities available to researchers across Stanford Medicine.
 
 **Website:**
-https://med.stanford.edu/rmg/funding/internal-funding.html
+[https://med.stanford.edu/rmg/funding/internal-funding.html]([https://med.stanford.edu/rmg/funding/internal-funding.html)
 
 Because funding opportunities change frequently, these resources are often the best starting point for identifying current opportunities.
 
@@ -33,21 +33,21 @@ Because funding opportunities change frequently, these resources are often the b
 Supports early-career researchers working at the intersection of environmental change and human health, including topics such as climate and health, pollution and health, food systems, infectious disease, and related areas. For many ECHOlab postdocs, this is likely to be the most natural fit.
 
 **Website:**
-https://hph.stanford.edu/research/planetary-health-postdoctoral-fellowship
+[https://hph.stanford.edu/research/planetary-health-postdoctoral-fellowship](https://hph.stanford.edu/research/planetary-health-postdoctoral-fellowship)
 
 ### Stanford Data Science Fellows
 
 Supports postdoctoral researchers conducting interdisciplinary data science research. Researchers in ECHOlab have successfully emphasized methodological, computational, and data science aspects of their work when applying. The program is intentionally broad and includes researchers from many disciplines.
 
 **Website:**
-https://datascience.stanford.edu/programs/data-science-fellows
+[https://datascience.stanford.edu/programs/data-science-fellows](https://datascience.stanford.edu/programs/data-science-fellows)
 
 ### Dean's Sustainability Leaders Postdoctoral Fellowship
 
 Supports postdoctoral researchers working on sustainability challenges across science, engineering, policy, economics, and related disciplines. The program is housed within the Stanford Doerr School of Sustainability.
 
 **Website:**
-https://sustainability.stanford.edu/about-school/dei/postdoctoral-resources/postdoctoral-fellowship-program
+[https://sustainability.stanford.edu/about-school/dei/postdoctoral-resources/postdoctoral-fellowship-program](https://sustainability.stanford.edu/about-school/dei/postdoctoral-resources/postdoctoral-fellowship-program)
 
 ## Additional Opportunities
 
@@ -58,14 +58,14 @@ These programs are often somewhat less aligned with typical ECHOlab projects, bu
 Typically most relevant for researchers working in development economics, political economy, economic growth, institutions, and related topics.
 
 **Website:**
-https://kingcenter.stanford.edu/postdoctoral-fellows
+[https://kingcenter.stanford.edu/postdoctoral-fellows](https://kingcenter.stanford.edu/postdoctoral-fellows)
 
 ### Stanford Energy Postdoctoral Fellowship
 
 Focused on energy-related research spanning science, engineering, policy, and economics. Some projects at the climate-energy-health interface may fit naturally within this program.
 
 **Website:**
-https://energypostdoc.stanford.edu/
+[https://energypostdoc.stanford.edu/](https://energypostdoc.stanford.edu/)
 
 ## Graduate Student Opportunities
 
@@ -74,7 +74,7 @@ https://energypostdoc.stanford.edu/
 Provides support for Stanford PhD students pursuing interdisciplinary data science research. The program includes funding, mentorship, and a cross-disciplinary community of scholars.
 
 **Website:**
-https://datascience.stanford.edu/programs/stanford-data-science-scholars-program
+[https://datascience.stanford.edu/programs/stanford-data-science-scholars-program](https://datascience.stanford.edu/programs/stanford-data-science-scholars-program)
 
 ## General Advice
 
