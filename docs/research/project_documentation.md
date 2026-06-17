@@ -70,12 +70,14 @@ Project repositories should document where project data are stored and how they 
 
 A typical Oak project directory might look like:
 
+```text
 project_name/
 ├── raw/
 ├── intermediate/
 ├── clean/
 ├── outputs/
 └── documentation/
+```
 
 Exact organization may vary across projects. The goal is not to enforce a single structure, but to ensure that future collaborators can easily identify:
 
