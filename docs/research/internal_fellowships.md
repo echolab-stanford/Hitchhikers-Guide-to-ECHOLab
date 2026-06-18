@@ -8,7 +8,7 @@ Funding opportunities change frequently. Always consult the program website for 
 
 ## Start Here: Stanford Internal Funding Databases
 
-Before searching for individual fellowship programs, researchers should review Stanford's internal funding databases, which aggregate fellowship opportunities, seed grants, pilot funding programs, conference funding, and other internal funding mechanisms from across the university.
+In addition to searching for individual fellowship programs, it may be helpful to review Stanford's internal funding databases, which aggregate fellowship opportunities, seed grants, pilot funding programs, conference funding, and other internal funding mechanisms from across the university.
 
 ### Stanford School of Humanities and Sciences Internal Funding Database
 
@@ -49,9 +49,6 @@ Supports postdoctoral researchers working on sustainability challenges across sc
 **Website:**
 [https://sustainability.stanford.edu/about-school/dei/postdoctoral-resources/postdoctoral-fellowship-program](https://sustainability.stanford.edu/about-school/dei/postdoctoral-resources/postdoctoral-fellowship-program)
 
-## Additional Opportunities
-
-These programs are often somewhat less aligned with typical ECHOlab projects, but may be relevant depending on the applicant and research topic.
 
 ### King Center Postdoctoral Fellowship
 
@@ -85,5 +82,3 @@ For example:
 * Climate-health projects may fit planetary health, sustainability, global health, or energy-focused programs.
 * Methodologically intensive projects may be competitive for data science fellowships.
 * Policy-oriented work may fit sustainability, development, or public policy programs.
-
-It is often worth discussing fellowship opportunities with potential faculty mentors well before application deadlines.
