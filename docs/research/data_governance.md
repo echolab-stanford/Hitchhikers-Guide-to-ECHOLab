@@ -14,11 +14,11 @@ Datasets that are used across multiple projects should be maintained as shared r
 
 Examples include:
 
-- ERA5
-- DHS
-- WorldClim
-- CMIP6
-- PurpleAir
+* ERA5
+* DHS
+* WorldClim
+* CMIP6
+* PurpleAir
 
 ### Minimize Duplication
 
@@ -44,27 +44,73 @@ Not all data belong in shared storage.
 
 In general:
 
-- Shared datasets support multiple projects.
-- Project data are specific to a particular project.
-- Derived products may fall into either category depending on anticipated reuse.
+* Shared datasets support multiple projects.
+* Project data are specific to a particular project.
+* Derived products may fall into either category depending on anticipated reuse.
 
 ### Support Reproducibility
 
 Project workflows should make it possible to identify:
 
-- Which datasets were used
-- Where they were stored
-- How they were processed
+* Which datasets were used
+* Where they were stored
+* How they were processed
 
 Good project documentation can substantially reduce the effort required to prepare replication materials.
+
+## Dataset Stewardship
+
+Shared datasets should have one or more designated maintainers.
+
+Maintainers are responsible for:
+
+* Documentation
+* Version management
+* Directory structure
+* Permission management
+* Major organizational changes
+
+Contributors are generally encouraged to:
+
+* Add new data
+* Update documentation
+* Extend existing resources
+* Improve metadata and provenance information
+
+However, major structural changes should be coordinated with dataset maintainers.
+
+Examples include:
+
+* Renaming shared directories
+* Moving shared directories
+* Reorganizing folder structures
+* Archiving datasets
+* Modifying access permissions
+
+The goal is not to restrict contributions, but to ensure that shared resources remain stable and discoverable for all users.
+
+## Documentation Expectations
+
+Whenever practical, shared datasets should include:
+
+* A README describing the dataset
+* Information on provenance and data sources
+* Relevant processing pipelines or code repositories
+* Contact information for maintainers
+
+When substantial updates are made, documentation should be updated to reflect:
+
+* What changed
+* When the change occurred
+* Who made the change
+* Any implications for downstream users
 
 ## Future Topics
 
 The following topics are still under discussion:
 
-- Shared dataset stewardship
-- Dataset versioning
-- Canonical storage locations
-- Archive policies
-- Data lifecycle management
-- Project offboarding
+* Dataset versioning
+* Canonical storage locations
+* Archive policies
+* Data lifecycle management
+* Project offboarding

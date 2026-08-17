@@ -1,32 +1,42 @@
 # Research Resources
 
-This section describes common research workflows and shared resources used within ECHOlab.
+This section describes common research workflows, infrastructure, and shared resources used within ECHOLab.
 
 The goal is to make projects, data, and workflows easy for future collaborators to discover, understand, reproduce, and extend.
 
-The guiding princple is that researchers should have flexibility in how they work, but projects should provide sufficient documentation and structure that others can quickly understand, reproduce, and build upon prior work.
+The guiding principle is that researchers should have flexibility in how they work, but projects should provide sufficient documentation and structure that others can quickly understand, reproduce, and build upon prior work.
 
-
+Most researchers will primarily use the resources in the Research Infrastructure and Workflows section. Additional resources related to publishing, communication, and professional development are provided below.
 
 ## Quick Links
 
-Looking for something specific?
+### Research Infrastructure and Workflows
 
-| Task                          | Resource                                                  |
-| ----------------------------- | --------------------------------------------------------- |
-| Starting a new project        | [Project Organization](project_documentation.md)          |
-| Finding a shared dataset      | [Shared Dataset Catalog](dataset_catalog.md)              |
-| Creating a shared dataset     | [Creating a Shared Dataset](create_dataset.md)            |
-| Finding reusable code         | [Shared Software Resources](shared_software.md)           |
-| Working with Oak              | [Oak Storage](oak_storage.md)                             |
-| Working with Sherlock         | [Working with Sherlock](computing.md)                     |
-| Finding funding opportunities | [Internal Funding Opportunities](internal_fellowships.md) |
-| Designing figures             | [Figure Design](figures.md)                               |
-| Submitting a paper            | [Submitting Your Paper](submitting.md)                    |
-| Talking to the media          | [Speaking with the Media](media.md)                       |
-| Preparing for replication     | [Replication Guides](internal_replication.md)             |
 
----
+| Task                                      | Resource                                                  |
+| ------------------------------------------| --------------------------------------------------------- |
+| Start a new project                       | [Project Organization](project_initialization.md)         |
+| Find a shared dataset                     | [Shared Dataset Catalog](dataset_catalog.md)              |
+| Create a shared dataset                   | [Creating a Shared Dataset](create_dataset.md)            |
+| Find reusable code                        | [Shared Software Resources](shared_software.md)           |
+| Understand Oak and shared storage         | [Oak Storage](oak_storage.md)                             |
+| Access shared storage on Oak              | [Working with Oak](working_with_oak.md)                   |
+| Run analyses on Sherlock                  | [Working with Sherlock](computing.md)                     |
+| Prepare replication materials             | [Replication Guides](internal_replication.md)             |
+
+
+### Publishing and Professional Development
+
+
+| Task                                      | Resource                                                  |
+| ------------------------------------------| --------------------------------------------------------- |
+| Find funding opportunities                | [Internal Funding Opportunities](internal_fellowships.md) |
+| Write effective abstracts                 | [Abstract Writing](abstracts.md)                          |
+| Design publication-quality figures        | [Figure Design](figures.md)                               |
+| Submit a manuscript                       | [Submitting Your Paper](submitting.md)                    |
+| Respond to media inquiries                | [Speaking with the Media](media.md)                       |
+
+
 
 ## Research Workflow
 
@@ -34,8 +44,6 @@ Research projects involve many stages, from idea generation through publication 
 
 ```text
 Idea
- ↓
-Funding
  ↓
 Project Setup
  ↓
@@ -58,22 +66,15 @@ Identifying research questions, evaluating novelty, and developing project ideas
 
 * [Generating Research Ideas](idea_generation.md)
 
-### 2. Grant Writing and Project Development
-
-Developing project concepts, preparing grant proposals, building collaborations, and identifying funding opportunities.
-
-* Tips on Writing Grants *(coming soon)*
-* [Internal Funding Opportunities for PhD Students and Postdocs](internal_fellowships.md)
-
-### 3. Project Setup and Organization
+### 2. Project Setup and Organization
 
 Creating a new project, establishing documentation, and planning for reproducibility.
 
-* [Project Documentation and Organization](project_documentation.md)
+* [Project Documentation and Organization](project_initialization.md)
 * [Project Documentation Template](https://github.com/echolab-stanford/echolab-newproject-template)
 * [Project Communication Guidelines](communication.md)
 
-### 4. Finding and Managing Data and Code
+### 3. Data and Shared Resources
 
 Identifying datasets, documenting resources, and promoting reuse.
 
@@ -83,41 +84,53 @@ Identifying datasets, documenting resources, and promoting reuse.
 * [Oak Storage](oak_storage.md)
 * [Shared Software Resources](shared_software.md)
 
-### 5. Project Analysis and Code Development
+### 4. Project Analysis and Code Development
 
 Developing workflows, collaborating with others, and maintaining reproducible analyses.
 
 * [Working with Sherlock](computing.md)
 * [Working with Oak](working_with_oak.md)
+* [SSH Configuration Guide](ssh_configuration.md)
 
-### 6. Figure Design and Data Visualization
+### 5. Figure Design and Data Visualization
 
 Communicating results through figures, visual summaries, and graphical storytelling.
 
 * [Figure Design](figures.md)
 
-### 7. Scientific Writing
+### 6. Scientific Writing
 
 Structuring papers, communicating clearly, and responding to reviewers.
 
+* [Abstract Writing](abstracts.md) 
 * Scientific Writing *(coming soon)*
 
-### 8. Publication and Dissemination
+
+### 7. Publication and Dissemination
 
 Publishing and communicating research findings.
 
 * [Submitting Your Paper](submitting.md)
 * [Speaking with the Media About Your Research](media.md)
 
-### 9. Reproducibility and Replication
+### 8. Reproducibility and Replication
 
 Ensuring that future collaborators can understand, reproduce, and extend a project.
 
 * [Pre-Publication Internal Replication](internal_replication.md)
 * [Post-Publication External Replication](external_replication.md)
 
-Future topics:
+## Future topics:
 
 * Documentation Review
 * Project Archiving
 * Research Handoffs
+
+## Project Development and Funding
+
+### Grant Writing and Project Development
+
+Developing project concepts, preparing grant proposals, building collaborations, and identifying funding opportunities.
+
+* Tips on Writing Grants *(coming soon)*
+* [Internal Funding Opportunities for PhD Students and Postdocs](internal_fellowships.md)

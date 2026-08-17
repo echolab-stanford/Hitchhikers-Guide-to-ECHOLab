@@ -2,48 +2,23 @@
 
 ## Overview
 
-Oak is ECHOLab's primary platform for shared data storage. Most shared datasets, project data, and lab-maintained resources should be stored on Oak whenever practical.
+Oak is ECHOLab's primary platform for shared data storage.
 
 Researchers commonly interact with Oak in one of three ways:
 
-* Accessing data directly on Sherlock
-* Mounting Oak as a local filesystem using SSHFS
-* Synchronizing data between Oak and a local machine using rsync
+* Accessing data directly from Sherlock
+* Mounting Oak locally using SSHFS
+* Synchronizing data between Oak and a local machine using `rsync`
 
-This page provides guidance on common workflows used within ECHOLab.
+This page focuses on practical workflows for accessing and working with Oak.
 
-Note: Oak resources are organized by PI. If you haven't already been added to Oak/mburke reach out to Sam. 
+For information on Oak's role within ECHOLab, data governance expectations, permissions, and storage philosophy, see the [Oak Storage](oak.md) guide.
 
----
+!!! note
 
-## Core Principles
-
-### Oak is the Canonical Source of Truth
-
-Researchers may maintain local copies of datasets for performance, convenience, or offline work.
-
-However:
-
-* Shared datasets should live on Oak.
-* Oak should be treated as the canonical source of truth.
-* Local copies should be viewed as working copies.
-* Important updates should be synchronized back to Oak.
-
-The existence of a file on a researcher's laptop should not be assumed to imply that it has been shared with the rest of the lab.
-
----
-
-### Local Mirrors Are Not Automatically Synchronized
-
-Synchronization between Oak and local machines is generally an explicit action.
-
-This means:
-
-* New files created on Oak do not automatically appear on your laptop.
-* New files created on your laptop do not automatically appear on Oak.
-* Researchers are responsible for running synchronization commands when appropriate.
-
-Always verify what will be transferred before performing large synchronization operations.
+```
+Oak resources are organized by PI. If you have not yet been added to the `mburke` Oak allocation, contact Sam.
+```
 
 ---
 
@@ -69,23 +44,33 @@ umount ~/oak
 
 > TODO: Verify and update connection commands as Oak infrastructure evolves.
 
----
+### Simplifying SSH Access
 
-## Avoiding Repeated Two-Factor Authentication
+Researchers who regularly use Oak or Sherlock are encouraged to configure a local SSH configuration file.
 
-Researchers may configure SSH keys to reduce the need for repeated authentication.
+Benefits include:
 
-Typical workflow:
+* Connecting using short aliases such as `ssh oak` and `ssh sherlock`
+* Reusing existing authenticated connections across multiple terminals
+* Reducing repeated Duo prompts
+* Simplifying `rsync`, `scp`, SSHFS, and VS Code workflows
 
-1. Generate an SSH key pair.
-2. Add the public key to Oak.
-3. Use the key for future connections.
-
-> TODO: Expand with current recommended Oak SSH key procedures.
-
-Note that inactive keys may expire and require recreation.
+See the [SSH Configuration Guide](ssh_configuration.md) for setup instructions.
 
 ---
+
+### Simplifying SSH Access
+
+Researchers who regularly use Oak or Sherlock are strongly encouraged to configure a local SSH configuration file.
+
+Benefits include:
+
+* Connecting using short aliases such as `ssh oak` and `ssh sherlock`
+* Reusing authenticated SSH connections across multiple terminals
+* Reducing repeated Duo prompts
+* Simplifying SSHFS, `rsync`, `scp`, and VS Code workflows
+
+See [SSH Configuration Guide](ssh_configuration.md) for setup instructions.
 
 ## Finding Your Mounted Oak Drive
 
@@ -101,19 +86,17 @@ Then navigate to:
 ~/oak
 ```
 
+If desired, you can add the mounted directory to Finder favorites for easier access.
+
 ---
 
 ## Data Synchronization with rsync
 
-Many ECHOLab researchers use rsync to synchronize data between Oak and local machines.
-
-Common workflow:
+Many ECHOLab researchers use `rsync` to synchronize data between Oak and local machines.
 
 ### Preview Changes First
 
-Use a "dry run" before transferring data.
-
-Example:
+Before large transfers, perform a dry run:
 
 ```bash
 rsync -avzn --progress source destination
@@ -121,89 +104,61 @@ rsync -avzn --progress source destination
 
 The `-n` flag previews changes without actually transferring files.
 
-Dry runs help prevent accidental overwrites and make it easier to understand what a synchronization command will do.
+Dry runs help prevent accidental overwrites and make it easier to understand exactly what a synchronization command will do.
 
 ---
 
 ### Synchronizing Oak → Local
 
-Typical use cases:
+Common use cases:
 
-* Creating a local working copy.
-* Updating local files from Oak.
-* Downloading newly added shared data.
+* Creating a local working copy
+* Updating local files from Oak
+* Downloading newly added shared datasets
 
-Researchers should understand:
-
-* Files are copied only when synchronization is run.
-* Local files are generally not deleted automatically.
-* New Oak files do not appear locally until synchronization occurs.
+Researchers should remember that files are copied only when synchronization is run. New files added to Oak will not automatically appear on local machines.
 
 ---
 
 ### Synchronizing Local → Oak
 
-Typical use cases:
+Common use cases:
 
-* Uploading processed data.
-* Sharing new files with collaborators.
-* Updating shared project resources.
+* Uploading processed data
+* Sharing new files with collaborators
+* Updating shared project resources
 
-Researchers should verify synchronization results before assuming files have been shared.
+Files created locally remain local until they are explicitly synchronized to Oak.
 
-A file created locally remains local until explicitly synchronized to Oak.
-
----
-
-## Oak Permissions
-
-Shared Oak directories often use a permission structure that distinguishes between contributors and administrators.
-
-Researchers may have permission to:
-
-* Read files
-* Create files
-* Modify files
-* Extend datasets
-
-while lacking permission to:
-
-* Move directories
-* Rename directories
-* Reorganize shared folder structures
-* Modify access controls
-
-This behavior is intentional and helps protect shared resources from accidental disruption.
-
-If you receive a "Permission denied" error while moving or renaming shared directories, contact the dataset owner or directory administrator.
+Always verify that important files have been transferred successfully before assuming they are available to collaborators.
 
 ---
 
-## Shared Data Governance
+## Common Workflow
 
-Researchers should coordinate major structural changes to shared datasets with the dataset owner or designated steward.
+A typical ECHOLab workflow looks something like:
 
-Examples include:
+```text
+Shared datasets stored on Oak
+            ↓
+Processing and analysis on Sherlock
+            ↓
+Outputs written back to Oak
+            ↓
+Results synchronized locally as needed
+```
 
-* Renaming directories
-* Moving directories
-* Reorganizing shared folder structures
-* Archiving datasets
-* Modifying permissions
-
-Contributors are generally encouraged to add data, update documentation, and extend datasets within established structures.
+Researchers should become comfortable moving data between Oak, Sherlock, and local machines early in their time in the lab.
 
 ---
 
 ## Future Topics
 
-The following topics should be expanded in future versions of this guide:
+Potential future additions:
 
-* Detailed SSH key setup
 * Recommended rsync aliases
 * Sherlock ↔ Oak workflows
 * Common troubleshooting steps
-* Oak permissions and ACLs
-* Shared dataset stewardship
-* Local mirror best practices
+* SSHFS troubleshooting
 * Performance considerations for large datasets
+* Strategies for maintaining local mirrors
