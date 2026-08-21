@@ -23,11 +23,26 @@
 
 - [ ] **Sherlock and Oak access**
     - **Oak:** Provide your Stanford email address. Sam will add you to Oak/mburke to get access to the lab's shared data.
-    - **Sherlock:** Request access through Stanford Research Computing. Sam or other lab members can help direct you to the appropriate contacts.
+    - **Sherlock:** Request access through Stanford Research Computing.
     - You will send an email requesting access and CC Marshall.
     - Stanford Research Computing will request Marshall's approval.
     - Marshall will approve the request and your account will be created.
+    - Template email: 
+    
+        ```text
+        To: srcc-support <srcc-support@stanford.edu>
+        Cc: Marshall Burke <mburke@stanford.edu>
+        Subject: Sherlock Account
 
+        Hi!
+
+        I'd like to request an account on Sherlock.
+        I understand I'll need to get approval from a sponsoring Faculty member (cc'ed)
+        My SUNet ID is [INSERT]
+
+        Thanks!
+        [NAME]
+        ```
 
 - [ ] **LLM Access**
 - Stanford provides free access to Claude, Gemini, ChatGPT for faculty, students, and staff. See access details here [here](https://uit.stanford.edu/news/new-ai-tools-stanford-arrive-june-30).
