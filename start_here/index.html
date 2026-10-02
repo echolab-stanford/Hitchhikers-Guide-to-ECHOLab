@@ -1,0 +1,1428 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="ECHOLab">
+      
+      
+        <link rel="canonical" href="https://echolab-stanford.github.io/Hitchhikers-Guide-to-ECHOLab/start_here/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>🔒ECHOLab: Start Here - ECHOLab Hitchhicker's Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#echolab_start_here" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ECHOLab Hitchhicker&#39;s Guide" class="md-header__button md-logo" aria-label="ECHOLab Hitchhicker's Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ECHOLab Hitchhicker's Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔒ECHOLab: Start Here
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ECHOLab Hitchhicker&#39;s Guide" class="md-nav__button md-logo" aria-label="ECHOLab Hitchhicker's Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ECHOLab Hitchhicker's Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒Home
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General advice
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    General advice
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/palife/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paly Life
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personal Resource
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/project_initialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/oak_storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oak Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/working_with_oak/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working with Oak
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/dataset_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared Data Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/data_governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managing Shared Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sherlock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lab Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/echolab_onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECHOLab Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/new_employee_onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Employee Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/echolab_offboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Echolab Offboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/echolab_logistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Logistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations/expectations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Expectations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graduate students
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Graduate students
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradstudent/recs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Recommendations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradstudent/life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Life in Palo Alto/Bay Area
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Postdocs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Postdocs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../postdoc/postdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Postdoc Life
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Predocs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Predocs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../predoc/predocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Predoc Life
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/whois/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute to this doc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting_started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sherlock_oak_and_computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sherlock, Oak, and computing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding_and_managing_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding and managing data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projects_and_github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projects and GitHub
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab_logistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab logistics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research_writing_and_publishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research, writing, and publishing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaving_the_lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leaving the lab
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div id="mkdocs-encrypted-content" style="display:none">V/HudjyfgkybNvlzHTcAlQ==;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</div>
+<div id="mkdocs-decrypted-content" style="display:none">
+    <form id="mkdocs-decrypt-form" class="md-content__inner md-typeset">
+        <h1>This content is protected with AES encryption. </h1>
+        <p>Contact your administrator for access to this page.</p>
+        <input class="md-input" type="password" id="mkdocs-content-password" placeholder="Password">
+        <button class="md-button md-button--primary" id="mkdocs-decrypt-button">Decrypt</button>
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "Hitchhikers-Guide-to-ECHOLab/start_here/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["vItwqIfutBteG785cAiXww==;YiXsM5M3stEmUaf12q/vL35t0z5oBvgiU3iluF+6IhKxjL+j0Drln53cOeCpUvasde70IYVA03Nk2qP0hg+9mgE1LAviy6eZerJruyRY6iOj4hnqR0GbLmQRcU72Nb4z;zYPzTinWKOORf8miuKRUEw=="];
+var encryptcontent_obfuscate = 0;
+
+const encryptcontent_event = new Event("encryptcontent_event");
+var encryptcontent_done = false;
+</script>
+<script type="module">
+if (!window.hasOwnProperty("init_decryptor")) {
+    import("../assets/javascripts/decrypt-contents.js");
+} else {
+    init_decryptor();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 ECHOLab
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/StanfordECHOLab" target="_blank" rel="noopener" title="Our twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "content.tabs.link", "content.code.copy", "navigation.instant", "navigation.path"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
