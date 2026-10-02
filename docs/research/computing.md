@@ -121,6 +121,23 @@ To avoid permission and possible file corruption avoid cloning repos directly
 into `$OAK`, use your `$HOME` for that and store your data in any of the
 storages described above
 
+### `$GROUP_HOME` and shared permissions
+
+Files and folders you create under `$GROUP_HOME` (`/home/groups/mburke`) default
+to permissions that only *you* can edit — other group members can read but not
+write, and this gets worse once your Sherlock account is eventually deactivated
+(nobody, not even lab admins, can then fix permissions on files you own, since
+`chmod` requires root or the owner). Set this up once and it's fixed permanently:
+
+- Run `chmod g+s <directory>` on shared directories you create so new
+  subfolders inherit `mburke` group ownership automatically.
+- Set `umask 002` in your `~/.bashrc` on Sherlock so new files and folders are
+  group-writable by default instead of the standard 644/755.
+
+With both in place, anything you create under `$GROUP_HOME` is writable by the
+rest of the lab from the moment it's created, so nobody has to remember to fix
+permissions later (including before you leave the lab).
+
 ## Running jobs 
 
 There are different ways of running jobs in Sherlock. Compared with other clusters, Sherlock

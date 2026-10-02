@@ -22,11 +22,11 @@ have an _on-boarding_ document that soft-lands the new members of our team.
 
 This document is crowd-sourced and it needs your help to keep it up-to-date and
 in good shape for others to use. Once you become a tenured ECHOer, you need to
-share your new tricks here to others. See the [contributing guidelines](contribute).
+share your new tricks here to others. See the [contributing guidelines](about/contribute.md).
 
 
 
 [echo_lab]: https://www.stanfordecholab.com/
 [sust_web]: https://sustainability.stanford.edu/
-[issues_gh]: https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab/issues_gh
+[issues_gh]: https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab/issues
 [pr_gh]: https://github.com/echolab-stanford/Hitchhikers-Guide-to-ECHOLab/pulls

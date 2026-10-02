@@ -13,11 +13,18 @@ This checklist covers Stanford-specific onboarding tasks for newly hired ECHOLab
     - In addition to getting your physical ID card activated you can add activation capabilities to your phone if desired.
 
 - [ ] **Office key**
-    - Obtain a key for your shared office (Y2E2 362).
-    - Sonal can assist with this process.
+    - Obtain a key for your shared office.
+    - Sonal can assist with this process though keys are now issued through ESoS.
+
+- [ ] **Office Setup**
+    - In some cases you will inherit a desk with monitor, keyboard, mouse, etc. but if you don't have these things yet (or don't like the ones currently at your desk) you can order new ones.
+    - To request office supplies talk with Sonal (and she will gets Marshall approval before ordering).
+
+ - [ ] **Software**
+    - For software that you need for work that Stanford does not provide free, you can often buy reduced price licenses through the [Stanford Licensing Webstore](https://uit.stanford.edu/service/softwarelic). One common example is Adobe Suite. Sonal can help with purchases. You can browse available software at the .
 
 - [ ] **Transportation**
     - Most people get to work via bike, car, or train. Below are resources for each.
     - Used bikes: Stanford Dept of Public Safety sells abandoned bikes for $40 each. See more info [here](https://police.stanford.edu/bicycle-sale.html). Ask other RAs about other resources.
     - Caltrain GoPass is FREE to eligible employees, students, postdocs (eligibility depends where you live) more info [here](https://transportation.stanford.edu/getting-stanford/public-transit/caltrain-gopass).
-    - Parking: If you plan to drive and park Roble Field Garage is the main parking location. You can purchase monthly or daily parking passes [here](https://transportation.stanford.edu/parking-stanford).
+    - Parking: If you plan to drive and park, Roble Field Garage is typically the most convenient parking location. You can purchase monthly or daily parking passes [here](https://transportation.stanford.edu/parking-stanford).
