@@ -22,7 +22,7 @@ A searchable database of internal funding opportunities available across Stanfor
 A curated collection of funding opportunities available to researchers across Stanford Medicine.
 
 **Website:**
-[https://med.stanford.edu/rmg/funding/internal-funding.html]([https://med.stanford.edu/rmg/funding/internal-funding.html)
+[https://med.stanford.edu/rmg/funding/internal-funding.html](https://med.stanford.edu/rmg/funding/internal-funding.html)
 
 Because funding opportunities change frequently, these resources are often the best starting point for identifying current opportunities.
 

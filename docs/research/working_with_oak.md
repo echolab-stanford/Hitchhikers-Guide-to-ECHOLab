@@ -12,7 +12,7 @@ Researchers commonly interact with Oak in one of three ways:
 
 This page focuses on practical workflows for accessing and working with Oak.
 
-For information on Oak's role within ECHOLab, data governance expectations, permissions, and storage philosophy, see the [Oak Storage](oak.md) guide.
+For information on Oak's role within ECHOLab, data governance expectations, permissions, and storage philosophy, see the [Oak Storage](oak_storage.md) guide.
 
 !!! note
 

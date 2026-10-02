@@ -30,7 +30,7 @@ nav:
    
   - Research:
     - Research Resources: research/index.md
-    - Project Documentation: research/project_documentation.md
+    - Project Documentation: research/project_initialization.md
     - Oak Storage: research/oak_storage.md
     - Working with Oak: research/working_with_oak.md
     - Shared Data Catalog: research/dataset_catalog.md
@@ -42,7 +42,7 @@ nav:
     - 'ECHOLab Onboarding': 'operations/echolab_onboarding.md'
     - 'New Employee Onboarding': 'operations/new_employee_onboarding.md'
     - 'Echolab Offboarding': 'operations/echolab_offboarding.md'
-    - 'HR Related Topics': 'operations/hr_topics.md'
+    - 'Lab Logistics': 'operations/echolab_logistics.md'
     - 'Lab Expectations': 'operations/expectations.md'
 
 

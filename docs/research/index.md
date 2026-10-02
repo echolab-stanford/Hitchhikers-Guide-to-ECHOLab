@@ -31,7 +31,7 @@ Most researchers will primarily use the resources in the Research Infrastructure
 | Task                                      | Resource                                                  |
 | ------------------------------------------| --------------------------------------------------------- |
 | Find funding opportunities                | [Internal Funding Opportunities](internal_fellowships.md) |
-| Write effective abstracts                 | [Abstract Writing](abstracts.md)                          |
+| Write effective abstracts                 | Abstract Writing *(coming soon)*                          |
 | Design publication-quality figures        | [Figure Design](figures.md)                               |
 | Submit a manuscript                       | [Submitting Your Paper](submitting.md)                    |
 | Respond to media inquiries                | [Speaking with the Media](media.md)                       |
@@ -102,7 +102,7 @@ Communicating results through figures, visual summaries, and graphical storytell
 
 Structuring papers, communicating clearly, and responding to reviewers.
 
-* [Abstract Writing](abstracts.md) 
+* Abstract Writing *(coming soon)*
 * Scientific Writing *(coming soon)*
 
 
